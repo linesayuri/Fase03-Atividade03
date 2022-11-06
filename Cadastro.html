@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre um Novo Ponto Turístico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Início Menu -->
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg bg-secondaryColor">
+            <a class="logo mx-3 ms-4" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-secondaryColor" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mx-5 mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="">Hotéis</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="">Cultura</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="">Gastronomia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-5 text-nowrap" href="Cadastro.html">Cadastre um Ponto Turístico</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link px-5 text-nowrap" href="Index.html">Pontos Cinematográficos</a>
+                    </li>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Fim Menu -->
+
+    <div class="container-fluid bg-mainColor">
+        <div class="row p-4">
+
+            <!-- início main container -->
+            <main class="container-fluid">
+
+                <h1 class="text-center">NOVO PONTO TURÍSTICO</h1>
+
+                <!-- início formulário -->
+                <div class="container formContainer bg-secondaryColor">
+                    <form name="dados" action="" method="post">
+                        <div class="row form-group mx-5">
+                            <div class="col-sm-12 col-lg-4 mx-auto">
+                                <div>
+                                    <label for="Nome do ponto turístico"></label>
+                                    <input class="inputPadrao" type="text" name="nome-do-ponto-turistico" autofocus
+                                        required placeholder="Nome do ponto turístico">
+                                </div>
+
+                                <div>
+                                    <label for="Endereço"></label>
+                                    <input class="inputPadrao" type="text" name="endereço" required
+                                        placeholder="Endereço">
+                                </div>
+
+                                <div>
+                                    <label for="pais"></label>
+                                    <input class="inputPadrao" list="pais__" id="pais" name="pais" required
+                                        placeholder="Selecione o País">
+                                    <datalist id="pais__">
+                                        <option value="Afeganistão">
+                                        <option value="África do Sul">
+                                        <option value="Albânia">
+                                        <option value="Alemanha">
+                                        <option value="Andorra">
+                                        <option value="Angola">
+                                        <option value="Arábia Saudita">
+                                        <option value="Argélia">
+                                        <option value="Argentina">
+                                        <option value="Arménia">
+                                        <option value="Austrália">
+                                        <option value="Áustria">
+                                        <option value="Azerbaijão">
+                                        <option value="Bahamas">
+                                        <option value="Bangladesh">
+                                        <option value="Barbados">
+                                        <option value="Barém">
+                                        <option value="Bélgica">
+                                        <option value="Belize">
+                                        <option value="Benim">
+                                        <option value="Bermudas">
+                                        <option value="Bielorrússia">
+                                        <option value="Bolívia">
+                                        <option value="Bonaire">
+                                        <option value="Bósnia e Herzegovina">
+                                        <option value="Botsuana">
+                                        <option value="Brasil">
+                                        <option value="Brunei">
+                                        <option value="Bulgária">
+                                        <option value="Burquina Fasso">
+                                        <option value="Burúndi">
+                                        <option value="Butão">
+                                        <option value="Cabo Verde">
+                                        <option value="Camarões">
+                                        <option value="Camboja">
+                                        <option value="Canadá">
+                                        <option value="Catar">
+                                        <option value="Cazaquistão">
+                                        <option value="Chade">
+                                        <option value="China">
+                                        <option value="Chipre">
+                                        <option value="Colômbia">
+                                        <option value="Comores">
+                                        <option value="Congo">
+                                        <option value="Coreia do Norte">
+                                        <option value="Coreia do Sul">
+                                        <option value="Cosovo">
+                                        <option value="Costa do Marfim">
+                                        <option value="Costa Rica">
+                                        <option value="Croácia">
+                                        <option value="Cuba">
+                                        <option value="Curaçau">
+                                        <option value="Dinamarca">
+                                        <option value="Dominica">
+                                        <option value="Egito">
+                                        <option value="Emirados Árabes Unidos">
+                                        <option value="Equador">
+                                        <option value="Eritreia">
+                                        <option value="Eslováquia">
+                                        <option value="Eslovénia">
+                                        <option value="Espanha">
+                                        <option value="Estado da Palestina">
+                                        <option value="Estados Unidos">
+                                        <option value="Estónia">
+                                        <option value="Etiópia">
+                                        <option value="Fiji">
+                                        <option value="Filipinas">
+                                        <option value="Finlândia">
+                                        <option value="França">
+                                        <option value="Gabão">
+                                        <option value="Gâmbia">
+                                        <option value="Gana">
+                                        <option value="Geórgia">
+                                        <option value="Granada">
+                                        <option value="Grécia">
+                                        <option value="Groenlândia">
+                                        <option value="Guatemala">
+                                        <option value="Guiana Francesa">
+                                        <option value="Guiana">
+                                        <option value="Guiné Equatorial">
+                                        <option value="Guiné-Bissau">
+                                        <option value="Guiné">
+                                        <option value="Haiti">
+                                        <option value="Honduras">
+                                        <option value="Hungria">
+                                        <option value="Iémen">
+                                        <option value="Ilhas Marechal">
+                                        <option value="Índia">
+                                        <option value="Indonésia">
+                                        <option value="Irão">
+                                        <option value="Iraque">
+                                        <option value="Irlanda">
+                                        <option value="Islândia">
+                                        <option value="Israel">
+                                        <option value="Itália">
+                                        <option value="Jamaica">
+                                        <option value="Japão">
+                                        <option value="Jibuti">
+                                        <option value="Jordânia">
+                                        <option value="Kuaite">
+                                        <option value="Laus">
+                                        <option value="Lesoto">
+                                        <option value="Letónia">
+                                        <option value="Líbano">
+                                        <option value="Libéria">
+                                        <option value="Líbia">
+                                        <option value="Listenstaine">
+                                        <option value="Lituânia">
+                                        <option value="Luxemburgo">
+                                        <option value="Macedónia">
+                                        <option value="Madagáscar">
+                                        <option value="Malásia">
+                                        <option value="Maláui">
+                                        <option value="Maldivas">
+                                        <option value="Mali">
+                                        <option value="Malta">
+                                        <option value="Marrocos">
+                                        <option value="Maurícia">
+                                        <option value="Mauritânia">
+                                        <option value="México">
+                                        <option value="Mianmar">
+                                        <option value="Micronésia">
+                                        <option value="Moçambique">
+                                        <option value="Moldávia">
+                                        <option value="Mónaco">
+                                        <option value="Mongólia">
+                                        <option value="Montenegro">
+                                        <option value="Namíbia">
+                                        <option value="Nauru">
+                                        <option value="Nepal">
+                                        <option value="Nicarágua">
+                                        <option value="Níger">
+                                        <option value="Nigéria">
+                                        <option value="Noruega">
+                                        <option value="Nova Zelândia">
+                                        <option value="Omã">
+                                        <option value="Países Baixos">
+                                        <option value="Palau">
+                                        <option value="Panamá">
+                                        <option value="Papua Nova Guiné">
+                                        <option value="Paquistão">
+                                        <option value="Paraguai">
+                                        <option value="Peru">
+                                        <option value="Polónia">
+                                        <option value="Portugal">
+                                        <option value="Quénia">
+                                        <option value="Quirguistão">
+                                        <option value="Quiribáti">
+                                        <option value="Reino Unido">
+                                        <option value="República Centro-Africana">
+                                        <option value="República Checa">
+                                        <option value="República Democrática do Congo">
+                                        <option value="República Dominicana">
+                                        <option value="Roménia">
+                                        <option value="Ruanda">
+                                        <option value="Rússia">
+                                        <option value="Salomão">
+                                        <option value="Salvador">
+                                        <option value="Samoa">
+                                        <option value="Santa Lúcia">
+                                        <option value="São Cristóvão e Neves">
+                                        <option value="São Marinho">
+                                        <option value="São Tomé e Príncipe">
+                                        <option value="São Vicente e Granadinas">
+                                        <option value="Seicheles">
+                                        <option value="Senegal">
+                                        <option value="Serra Leoa">
+                                        <option value="Sérvia">
+                                        <option value="Singapura">
+                                        <option value="Síria">
+                                        <option value="Somália">
+                                        <option value="Sri Lanca">
+                                        <option value="Suazilândia">
+                                        <option value="Sudão do Sul">
+                                        <option value="Sudão">
+                                        <option value="Suécia">
+                                        <option value="Suíça">
+                                        <option value="Suriname">
+                                        <option value="Tailândia">
+                                        <option value="Taiuã">
+                                        <option value="Tajiquistão">
+                                        <option value="Tanzânia">
+                                        <option value="Timor-Leste">
+                                        <option value="Togo">
+                                        <option value="Tonga">
+                                        <option value="Trindade e Tobago">
+                                        <option value="Tunísia">
+                                        <option value="Turcomenistão">
+                                        <option value="Turquia">
+                                        <option value="Tuvalu">
+                                        <option value="Ucrânia">
+                                        <option value="Uganda">
+                                        <option value="Uruguai">
+                                        <option value="Usbequistão">
+                                        <option value="Vanuatu">
+                                        <option value="Vaticano">
+                                        <option value="Venezuela">
+                                        <option value="Vietname">
+                                        <option value="Zâmbia">
+                                        <option value="Zimbábue">
+                                    </datalist>
+                                </div>
+                                <div>
+                                    <label for="Estado"></label>
+                                    <input class="inputPadrao" type="text" required placeholder="Estado">
+                                </div>
+                                <div>
+                                    <label for="Cidade"></label>
+                                    <input class="inputPadrao" type="text" required placeholder="Cidade">
+                                </div>
+                                <div>
+                                    <select class="inputPadrao" id="tipo" required>
+                                        <option value="0">Selecione o tipo de ponto turístico</option>
+                                        <option value="1">Museu</option>
+                                        <option value="2">Teatro</option>
+                                        <option value="3">Parque</option>
+                                        <option value="4">Outros</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="Telefone"></label>
+                                    <input class="inputPadrao" type="tel" required placeholder="Telefone">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-4 mx-auto">
+                                <div>
+                                    <label for="Site"></label>
+                                    <input class="inputPadrao" type="url" placeholder="Site">
+                                </div>
+                                <div>
+                                    <label for="Valor do Ingresso"></label>
+                                    <input class="inputPadrao" type="number" step="00.01" name="quantity" min="01.00"
+                                        placeholder="Valor do Ingresso">
+                                </div>
+                                <div class="InputHorarioContainer">
+                                    <label for="Horário de funcionamento:">Horário de Funcionamento</label>
+                                    <p>de</p>
+                                    <input class="inputPadrao inputHorarioCampo" type="time">
+                                    <p>até</p>
+                                    <input class="inputPadrao inputHorarioCampo" type="time">
+                                </div>
+                                <div class="notaContainer">
+                                    <label for="Nota">Nota</label>
+                                    <input type="range" id="nota" min="0" max="10" step="1" list="notas">
+
+                                    <datalist id="notas">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1"></option>
+                                        <option value="2" label="2"></option>
+                                        <option value="3" label="3"></option>
+                                        <option value="4" label="4"></option>
+                                        <option value="5" label="5"></option>
+                                        <option value="6" label="6"></option>
+                                        <option value="7" label="7"></option>
+                                        <option value="8" label="8"></option>
+                                        <option value="9" label="9"></option>
+                                        <option value="10" label="10"></option>
+                                    </datalist>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-4 mx-auto">
+                                <div class="adicionarArquivoContainer mt-5">
+                                    <label id="adicionarArquivo" for="inputArquivo">Adicionar Foto
+                                        <input type="file" id="inputArquivo">
+
+                                    </label>
+                                </div>
+
+                                <div class="petContainer">
+                                    <div class="petTitle"><label for="Pet Friendly">Pet Friendly</label></div>
+                                    <div class="petOptions">
+                                        <div class="petOption">
+                                            <input type="radio" name="petfriendly" id="petfriendly1">
+                                            <label for="petfriendly1"> Sim</label>
+                                        </div>
+                                        <div class="petOption">
+                                            <input type="radio" name="petfriendly" id="petfriendly2">
+                                            <label for="petfriendly2"> Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="viajanteContainer">
+
+                                    <div class="viajanteTitle"><label for="Tipo de Viajante">Tipo de
+                                            Viajante</label>
+                                    </div>
+                                    <!-- <div class="viajanteOptions"> -->
+                                    <div class="viajanteOptions">
+                                        <label for="">
+                                            <input type="checkbox" id="tipodeviajante1">
+                                            Família</label>
+                                        <label for="">
+                                            <input type="checkbox" id="tipodeviajante2">
+                                            Casal</label>
+                                        <label for="">
+                                            <input type="checkbox" id="tipodeviajante3">
+                                            Amigos</label>
+                                        <label for="">
+                                            <input type="checkbox" id="tipodeviajante4">
+                                            Negócios</label>
+                                        <label for="">
+                                            <input type="checkbox" id="tipodeviajante5">
+                                            Sozinho</label>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+
+                            </div>
+
+                            <div class="row buttonsContainer mt-4 mx-1">
+                                <div class="col-sm-12 col-lg-6 my-3">
+                                    <button id="limparCampos" type="reset">Limpar campos</button>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 my-3">
+                                    <button id="adicionarItem" type="submit" class="col-12 col-lg-6">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- final formulário -->
+
+            </main>
+            <!-- final main container -->
+
+        </div>
+
+        <!-- início footer -->
+        <footer class="footer_principal my-5">
+            <p class="">2022 Todos os direitos reservados – Projeto Traveller</p>
+        </footer>
+        <!-- final footer -->
+
+    </div>
+
+
+
+
+
+
+    <!-- LINKS jQuery e JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

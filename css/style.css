@@ -1,0 +1,484 @@
+/* Configurações Gerais */
+
+:root {
+    --mainColorBG: #F0F7FA;
+    --mainColorContent: #fff;
+    --mainColor: #0D3444;
+    --secundaryColor: #CCE8F5;
+    --tercearyColor: #99D2EA;
+    --fontColor: #000;
+    --fontColorida: #0D3444;
+    --fontPadrao: 'Inter', sans-serif;
+    --imagemlogo: url(/images/logo_traveller_fundo_transparente.png);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--mainColorBG);
+}
+
+
+/* Container */
+.main-container {
+    width: 90%;
+    align-items: center;
+}
+
+
+/* Cores */
+.bg-mainColor {
+    background-color: var(--mainColorBG);
+}
+
+.bg-mainColorContent {
+    background-color: var(--mainColorContent);
+}
+
+.bg-secondaryColor {
+    background-color: var(--secundaryColor);
+}
+
+.bg-tercearyColor {
+    background-color: var(--tercearyColor);
+}
+
+
+/* início Menu */
+.navbar {
+    font-weight: 800;
+    font-size: 16pt;
+    height: 104px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    background-image: var(--imagemlogo);
+    background-size: cover;
+    width: 256px;
+    height: 65px;
+}
+
+/* Fim Menu */
+
+
+/* textos e títulos */
+h1 {
+    font-weight: 700;
+    font-size: 50pt;
+    margin: 60px 0px 60px;
+    color: var(--fontColorida);
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 32pt;
+    margin: 20px 0px 30px;
+    color: var(--fontColorida);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24pt;
+    color: var(--fontColorida);
+    margin: 30px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20pt;
+    color: var(--fontColorida);
+}
+
+.textos {
+    font-size: 14pt;
+    color: var(--fontColorida);
+    width: 60%;
+}
+
+
+/* Página Info */
+.banner {
+    width: 100%;
+}
+
+.img-destaque {
+    width: 60%;
+    align-items: center;
+}
+
+.logos {
+    margin: 10px 0px 10px;
+}
+
+
+/* início cards */
+.card {
+    width: 90%;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+/* Fim cards */
+
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+
+/* início detalhes pontos turísticos */
+.pontoCinematograficoDetails {
+    width: 60%;
+    font-size: 14pt;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.pontoCinematograficoDetailsCard {
+    width: 100%;
+    font-size: 12pt;
+    font-weight: 800;
+    margin: 0px 0px 10px;
+}
+
+.pontoCinematograficoTipoIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    float: left;
+    margin: 7px 10px 7px 10px;
+}
+
+.tipoMuseu {
+    background-color: #3965BA;
+}
+
+
+.pontoCinematograficoAbertoIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #34B558;
+    float: left;
+    margin: 7px 10px 7px 10px;
+}
+
+.pontoCinematograficoPetIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #34B558;
+    float: left;
+    margin: 7px 10px 7px 10px;
+}
+
+.pontoCinematograficoRating {
+    float: right;
+    color: #A16C1C;
+}
+
+/* Fim detalhes pontos turísticos */
+
+
+/* Form Container */
+
+.formContainer {
+    width: 85%;
+    padding: 50px 60px 40px 30px;
+    margin-top: 40px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+
+.titulo {
+    text-align: center;
+    margin: -5% auto 30px auto;
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #0D3444;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+::placeholder {
+    color: #99D2EA;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.inputPadrao {
+    background-color: #F0F7FA;
+    border: 1px solid #99D2EA;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 65px;
+    color: #0D3444;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #0D3444;
+}
+
+label {
+    color: #0D3444;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.inputPadrao select {
+    color: #f0f7fa;
+}
+
+/* Fim Form Container */
+
+/* Input Horário */
+.InputHorarioContainer {
+    border: 1px solid #99D2EA;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 305px;
+    text-align: center;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.inputHorarioCampo {
+    width: 275px;
+    margin-bottom: 0;
+}
+
+/* Fim input Horário */
+
+/* Input Nota */
+
+.notaContainer {
+    width: 300px;
+    height: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.notaContainer input {
+    width: 100%;
+    margin: 5px;
+}
+
+#notas {
+    display: flex;
+}
+
+.notaContainer input {
+    accent-color: #0D3444;
+}
+
+#notas option {
+    margin-right: 8px;
+    margin-left: 5px;
+    color: #0D3444
+}
+
+/* Fim Input Nota */
+
+
+/* Buttons Container */
+
+.buttonsContainer {
+    /* display: flex; */
+    margin: 40px;
+    /* justify-content: center; */
+}
+
+.buttonsContainer button {
+    width: 300px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+#limparCampos {
+    background-color: #99D2EA;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+#limparCampos:hover {
+    border: 1px solid #0D3444;
+}
+
+#limparCampos:active {
+    background-color: #CCE8F5;
+}
+
+#adicionarItem {
+    background-color: #0D3444;
+    color: #CCE8F5;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+#adicionarItem:hover {
+    border: 1px solid #CCE8F5;
+}
+
+#adicionarItem:active {
+    background-color: #99D2EA;
+    color: #0D3444
+}
+
+/* Fim Buttons Container */
+
+/* Input File */
+.adicionarArquivoContainer {
+    background-color: #99D2EA;
+    color: #CCE8F5;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+#adicionarArquivo {
+    cursor: pointer;
+}
+
+
+.adicionarArquivoContainer input {
+    margin: 20px;
+    overflow: hidden;
+    width: 180px;
+}
+
+/* Fim Input File */
+
+/* Pet Container */
+.petContainer {
+    text-align: center;
+    width: 300px;
+    margin: 40px 0 30px 0;
+}
+
+.petOption {
+    float: left;
+    margin: 0 20px 0 20px;
+    justify-content: center;
+}
+
+.petTitle {
+    margin-bottom: 15px;
+}
+
+.petOptions {
+    display: flex;
+    justify-content: center;
+}
+
+.petOptions input {
+    accent-color: #0D3444;
+    transform: scale(1.5);
+}
+
+/* Fim Pet Container */
+
+/* Tipo de Viajante */
+.viajanteContainer {
+    width: 300px;
+    margin: 20px 0 20px 0;
+}
+
+.viajanteTitle {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.viajanteOptions label {
+    text-align: left;
+    display: block;
+    padding: 10px 0 5px 0;
+    box-sizing: border-box;
+}
+
+.viajanteOptions {
+    margin: 0 0 0 30%;
+}
+
+.viajanteOptions input {
+
+    margin-right: 5px;
+    transform: scale(1.3);
+    vertical-align: bottom;
+    position: relative;
+    accent-color: #0D3444;
+}
+
+/* Fim Tipo de Viajante */
+
+/* início media query */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-weight: 600;
+        font-size: 24pt !important;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 20pt !important;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 16pt !important;
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 14pt !important;
+    }
+}
+
+/* Fim media query */
